@@ -6,7 +6,8 @@ from dsp.utils.settings import settings
 
 from together import Together
 
-client = Together()
+# I was explicitly asked for setting up here the api_key so something went odd on my testings and versions used
+client = Together() # api_key=os.getenv("TOGETHER_API_KEY")
 
 ERRORS = Exception
 
